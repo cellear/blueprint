@@ -1,0 +1,4 @@
+node_modules/
+.sessions.json
+workspace/
+.DS_Store

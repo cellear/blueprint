@@ -1,0 +1,29 @@
+{
+  "_comment": "projectRoot is the shared working directory (cwd) all avatars operate in — their 'home PWD of the entire project'. Point it at a real project you want the trio to work on. With permissionMode 'acceptEdits', agents WILL create and modify real files here, so default to a scratch workspace until you're ready.",
+  "projectRoot": "./workspace",
+  "port": 3000,
+  "permissionMode": "acceptEdits",
+  "avatars": [
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "Librarian",
+      "model": "claude-opus-4-8",
+      "accent": "#6D5BD0"
+    },
+    {
+      "id": "cody",
+      "name": "Cody",
+      "role": "Coder",
+      "model": "claude-sonnet-4-6",
+      "accent": "#059669"
+    },
+    {
+      "id": "quinn",
+      "name": "Quinn",
+      "role": "QA / Tester",
+      "model": "claude-haiku-4-5",
+      "accent": "#2563EB"
+    }
+  ]
+}
