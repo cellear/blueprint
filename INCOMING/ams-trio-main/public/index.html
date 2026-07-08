@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AMS Trio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AMS</span>
+        <span class="brand-title">Trio</span>
+      </div>
+      <div class="brand-sub">Talk to your colleagues — each runs in its own thread</div>
+    </header>
+
+    <main id="panels" class="panels">
+      <!-- panels injected by app.js -->
+    </main>
+
+    <template id="panel-template">
+      <section class="panel">
+        <div class="panel-accent"></div>
+        <div class="scrollback"></div>
+        <figure class="avatar">
+          <img alt="" />
+          <figcaption>
+            <span class="nameplate-name"></span>
+            <span class="nameplate-role"></span>
+          </figcaption>
+        </figure>
+        <form class="composer">
+          <input
+            class="composer-input"
+            type="text"
+            autocomplete="off"
+            placeholder="Message…"
+          />
+          <button class="composer-send" type="submit">Send</button>
+        </form>
+      </section>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
